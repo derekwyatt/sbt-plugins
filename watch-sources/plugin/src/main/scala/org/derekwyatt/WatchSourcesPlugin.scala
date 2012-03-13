@@ -7,7 +7,6 @@ object WatchSourcesPlugin extends Plugin {
   import Keys._
   val watchedFiles = TaskKey[Seq[File]]("watched-files", "The files to watch in dir-to-watch.")
   val echoFiles = TaskKey[Unit]("echo-files", "Task that prints the list of files that have changed.")
-  val WatchConfig = config("watch")
   def watchSourcesSettings = Seq(
     dirToWatch <<= sourceDirectory / "watching",
     watchedFiles <<= dirToWatch map { d => { IO.listFiles(d).toSeq } },

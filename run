@@ -2,3 +2,4 @@
 
 (cd hello/plugin; sbt publish-local);(cd hello/use; sbt hello)
 (cd hello-config/plugin; sbt publish-local);(cd hello-config/use; sbt hello:hello)
+(cd watch-sources/plugin; sbt publish-local);(cd watch-sources/use; sbt ~compile)
