@@ -1,4 +1,4 @@
-# "Watch Sources" SBT Plugin #
+# "New Compiler Config" SBT Plugin #
 
 ## Compile and Publish ##
 
